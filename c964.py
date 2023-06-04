@@ -31,7 +31,8 @@ clear()
 def load_and_preprocess_data():
     global df, X, y
     print("\nLoading training dataset...")
-    df = pd.read_csv("/Users/dewbs/Desktop/    /Current Term (8)/C964 - Computer Science Capstone/Task 2/Data Sets/loan data 8/credit_data.csv")
+    url = "https://github.com/ctdewberry/C964/raw/main/credit_data.csv"
+    df = pd.read_csv(url)
     print("Training dataset successfully loaded.\n")
     df = df.drop(['clientid'], axis=1)
     df = df[df['age'] >= 18]
