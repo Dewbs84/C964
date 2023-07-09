@@ -17,15 +17,19 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay
-from os import system, name 
+from os import system, name
+from IPython.display import clear_output
+
 
 # csv_file_path = '/Users/dewbs/Desktop/    /Current Term (8)/C964 - Computer Science Capstone/Task 2/Data Sets/loan data 8/output/output.csv'
 
 def clear(): 
-    if name == 'nt': 
-        system('cls') 
-    else: 
-        system('clear') 
+    # if name == 'nt': 
+    #     system('cls') 
+    # else: 
+    #     system('clear') 
+    clear_output(wait=False)
+
 
 clear()
 
